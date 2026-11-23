@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page</title>
+<style>
+  body { font-family: Arial; margin: 0; }
+  .top { background: #5aa; color: #9cc; padding: 10px; }
+  .big { font-size: 28px; font-weight: bold; }
+  .menu span { margin-right: 15px; cursor: pointer; }
+  .box { padding: 20px; }
+  .card { border: 1px solid #ccc; padding: 10px; margin: 10px; float: left; width: 200px; }
+  .clear { clear: both; }
+  .inp { display: block; margin: 8px 0; padding: 4px; outline: none; }
+  .btn { background: #5aa; color: #fff; padding: 8px 16px; display: inline-block; cursor: pointer; }
+  .foot { background: #333; color: #777; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="big">City Care Hospital</div>
+  <div class="menu">
+    <span onclick="go('s')">Services</span>
+    <span onclick="go('d')">Doctors</span>
+    <span onclick="go('a')">Book</span>
+  </div>
+</div>
+
+<div class="box">
+  <div class="big">Our Services</div>
+  <div class="card"><div class="big">Cardiology</div><div>Heart care and diagnostics.</div></div>
+  <div class="card"><div class="big">Pediatrics</div><div>Care for infants and children.</div></div>
+  <div class="card"><div class="big">Orthopedics</div><div>Bone, joint and muscle care.</div></div>
+  <div class="clear"></div>
+</div>
+
+<div class="box">
+  <div class="big">Our Doctors</div>
+  <div class="card"><img src="doc1.jpg"><div class="big">Dr. A. Rao</div><div>Cardiologist</div></div>
+  <div class="card"><img src="doc2.jpg"><div class="big">Dr. S. Mehta</div><div>Pediatrician</div></div>
+  <div class="card"><img src="doc3.jpg"><div class="big">Dr. K. Iyer</div><div>Orthopedic Surgeon</div></div>
+  <div class="clear"></div>
+</div>
+
+<div class="box">
+  <div class="big">Book an Appointment</div>
+  <div>Name</div>
+  <input class="inp" type="text">
+  <div>Phone</div>
+  <input class="inp" type="text">
+  <div>Email</div>
+  <input class="inp" type="text">
+  <div>Date</div>
+  <input class="inp" type="text" placeholder="dd/mm/yyyy">
+  <div>Department</div>
+  <select class="inp"><option>Cardiology</option><option>Pediatrics</option><option>Orthopedics</option></select>
+  <div>Reason</div>
+  <textarea class="inp"></textarea>
+  <div class="btn" onclick="alert('Sent')">Submit</div>
+</div>
+
+<div class="foot">
+  <div>City Care Hospital, 12 Health Road</div>
+  <div>Emergency: 108</div>
+</div>
+<script>function go(x){}</script>
+</body>
+</html>
